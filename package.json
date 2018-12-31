@@ -1,0 +1,24 @@
+{
+  "name": "@scanf/isun",
+  "version": "0.0.0",
+  "description": "check if a website is using Netlify",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scanf/isun.git"
+  },
+  "keywords": [
+    "netlify",
+    "wappalyzer",
+    "jamstack"
+  ],
+  "author": "Alexander Alemayhu",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/scanf/isun/issues"
+  },
+  "homepage": "https://github.com/scanf/isun#readme"
+}
