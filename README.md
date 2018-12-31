@@ -1,6 +1,6 @@
 # ![isun - Is Using Netlify?](./logo.png)
 
-[![Build Status](https://travis-ci.org/scanf/isun.svg?branch=master)](https://travis-ci.org/scanf/isun)
+[![Build Status](https://travis-ci.org/scanf/isun.svg?branch=master)](https://travis-ci.org/scanf/isun) [![npm version](https://badge.fury.io/js/%40scanf%2Fisun.svg)](https://badge.fury.io/js/%40scanf%2Fisun)
 
 Check if a website is using Netlify by reading the HTTP server header field.
 
