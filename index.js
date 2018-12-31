@@ -1,7 +1,7 @@
-var request = require("request");
+var axios = require("axios");
 
 exports.IsUsingNetlify = function(url, cb) {
-  request(url, function(err, res) {
+  axios(url, { method: 'HEAD', mode: 'no-cors' }).then( (res) => {
     if (res.headers.server.includes("Netlify")) {
       cb(true);
     } else {
