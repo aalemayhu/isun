@@ -23,5 +23,8 @@
   "homepage": "https://github.com/scanf/isun#readme",
   "devDependencies": {
     "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "request": "^2.88.0"
   }
 }
