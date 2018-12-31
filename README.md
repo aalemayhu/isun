@@ -4,6 +4,15 @@
 
 Check if a website is using Netlify by reading the HTTP server header field.
 
+## Usage
+
+```js
+var { IsUsingNetlify } = require("@scanf/isun");
+IsUsingNetlify("https://jamstack.xdp.no/", isun => {
+  console.log("Is the page using Netlif?", isun);
+});
+```
+
 ## LICENSE
 
 The project uses a GPL-3.0 licenses for all files unless otherwise specified.
