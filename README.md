@@ -13,7 +13,7 @@ Check if a website is using Netlify by reading the HTTP server header field.
 ```js
 var { IsUsingNetlify } = require("@scanf/isun");
 IsUsingNetlify("https://jamstack.xdp.no/", isun => {
-  console.log("Is the page using Netlif?", isun);
+  console.log("Is the page using Netlify?", isun);
 });
 ```
 
