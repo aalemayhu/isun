@@ -19,7 +19,7 @@ describe("API", function() {
         actual => {
           assert.equal(undefined, actual);
         },
-        error => {}
+        error => {} // eslint-disable-line no-unused-vars
       );
     });
   });
