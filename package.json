@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test",
-    "lint": "eslint --fix *.js test/*.js"
+    "lint": "eslint --fix *.js test/*.js",
+    "serve-lambda": "netlify-lambda serve functions",
+    "build-lambda": "netlify-lambda build functions"
   },
   "repository": {
     "type": "git",
@@ -23,9 +25,11 @@
   "homepage": "https://github.com/scanf/isun#readme",
   "devDependencies": {
     "eslint": "^5.11.1",
-    "mocha": "^5.2.0"
+    "mocha": "^5.2.0",
+    "netlify-lambda": "^1.1.1"
   },
   "dependencies": {
-    "axios": "^0.18.0"
+    "axios": "^0.18.0",
+    "valid-url": "^1.0.9"
   }
 }
