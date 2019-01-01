@@ -9,10 +9,19 @@ exports.handler = function(event, context, callback) {
     return;
   }
 
-  IsUsingNetlify(url, isun => {
-    callback(null, {
-      statusCode: 200,
-      body: `${isun}`
-    });
-  });
+  IsUsingNetlify(
+    url,
+    isun => {
+      callback(null, {
+        statusCode: 200,
+        body: `${isun}`
+      });
+    },
+    error => {
+      callback(null, {
+        statusCode: 400,
+        body: error ? error.toString() : `unknown error for ${url}`
+      });
+    }
+  );
 };
