@@ -13,5 +13,10 @@ describe("API", function() {
         assert.equal(false, actual);
       });
     });
+    it("should become an exeception", function() {
+      IsUsingNetlify("https://blog.alemayhu.com/", actual => {
+        assert.equal(false, actual);
+      });
+    });
   });
 });
