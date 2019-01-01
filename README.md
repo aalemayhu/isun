@@ -33,6 +33,6 @@ a valid url and remember to include `https://` prefix :wink:
 
 ## LICENSE
 
-The project uses a GPL-3.0 licenses for all files unless otherwise specified.
+The project uses a MIT license for all files unless otherwise specified.
 
 The project logo was created using the awesome [logo-maker](https://logo-maker.egoist.sh/) from [egoist/logo-maker](https://github.com/egoist/logo-maker).
