@@ -25,7 +25,7 @@ require("@scanf/isun").IsUsingNetlify(url, isun => {
 Assuming you have deployed on Netlify and your domain is `example.xyz`, the below should work:
 
 ```js
-curl https://example.xyz/isun?url=https://google.com
+curl https://example.xyz/.netlify/functions/isun?url=https://google.com
 ```
 
 The function expects you to set the query parameter `url` and be compliant with [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt). Or simply put pass
