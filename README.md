@@ -8,7 +8,7 @@ Check if a website is using Netlify by reading the HTTP server header field.
 
     npm install --save @scanf/isun
 
-## Usage
+## Usage as module
 
 ```js
 var { IsUsingNetlify } = require("@scanf/isun");
@@ -16,6 +16,19 @@ IsUsingNetlify("https://jamstack.xdp.no/", isun => {
   console.log("Is the page using Netlify?", isun);
 });
 ```
+
+## Usage as Lambda function on Netlify
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/scanf/isun)
+
+Assuming you have deployed on Netlify and your domain is `example.xyz`, the below should work:
+
+```js
+curl https://example.xyz/isun?url=https://google.com  
+```
+
+The function expects you to set the query parameter `url` and be compliant with [RFC 3986](https://www.ietf.org/rfc/rfc3986.txt). Or simply put pass
+a valid url and remember to include `https://` prefix :wink:
 
 ## LICENSE
 
